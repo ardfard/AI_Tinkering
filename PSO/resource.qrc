@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="run">images/sink.bmp</file>
+        <file alias="edge">images/linepointer.png</file>
+        <file alias="vertex">images/node.png</file>
+        <file alias="pointer">images/pointer.png</file>
+    </qresource>
+</RCC>

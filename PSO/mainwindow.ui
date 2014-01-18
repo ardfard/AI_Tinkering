@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>472</width>
+    <height>339</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QGraphicsView" name="graphicsView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>472</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionRunSimulation"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionPointer"/>
+   <addaction name="actionInsertVertex"/>
+   <addaction name="actionInsertEdge"/>
+  </widget>
+  <action name="actionRunSimulation">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/run</normaloff>:/run</iconset>
+   </property>
+   <property name="text">
+    <string>Run Simulation</string>
+   </property>
+   <property name="toolTip">
+    <string>run simulation</string>
+   </property>
+  </action>
+  <action name="actionInsertVertex">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/vertex</normaloff>:/vertex</iconset>
+   </property>
+   <property name="text">
+    <string>Vertex</string>
+   </property>
+   <property name="toolTip">
+    <string>insert vertex</string>
+   </property>
+  </action>
+  <action name="actionInsertEdge">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/edge</normaloff>:/edge</iconset>
+   </property>
+   <property name="text">
+    <string>Edge</string>
+   </property>
+   <property name="toolTip">
+    <string>insert edge</string>
+   </property>
+  </action>
+  <action name="actionPointer">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/pointer</normaloff>:/pointer</iconset>
+   </property>
+   <property name="text">
+    <string>Pointer</string>
+   </property>
+   <property name="toolTip">
+    <string>select/move</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
