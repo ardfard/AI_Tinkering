@@ -1,3 +1,7 @@
-*.pro
-*.exe
+*.pro*
+*.exe*
 bin/*
+*Debug*
+*Release*
+*.cproject
+*.project
